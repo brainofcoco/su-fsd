@@ -10,7 +10,7 @@ export async function GET() {
 
   //   console.log('CSV File Path', filePath);
 
-  let result: Product[] = [];
+  const result: Product[] = [];
 
   return new Promise((resolve, reject) => {
     // check if file exist
@@ -30,7 +30,7 @@ export async function GET() {
         resolve(NextResponse.json(result));
       })
       .on('error', (error) => {
-        console.error('Error while reading');
+        console.error('Error while reading', error);
         reject(new Response('Error reading the CSV file', { status: 500 }));
       });
   });
