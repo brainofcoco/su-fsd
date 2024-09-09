@@ -8,7 +8,7 @@ import { Product } from '@/types/product';
 export async function GET() {
   const filePath = path.join(process.cwd(), 'src', 'data', 'data.csv');
 
-  console.log('CSV File Path', filePath);
+  //   console.log('CSV File Path', filePath);
 
   let result: Product[] = [];
 

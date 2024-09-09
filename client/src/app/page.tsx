@@ -73,7 +73,7 @@ export default function Home() {
   }, [sortOption]);
   return (
     <div className="min-h-screen p-6 bg-gray-100 flex flex-col items-center">
-      <h1 className="text-3xl font-bold mb-4 text-gray-900">Product List</h1>
+      <h1 className="text-3xl font-bold mb-4 text-gray-900">List</h1>
 
       <div className="md-10">
         <select
