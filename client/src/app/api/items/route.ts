@@ -12,7 +12,7 @@ export async function GET() {
 
   const result: Product[] = [];
 
-  return new Promise((resolve, reject) => {
+  return new Promise<void | Response>((resolve, reject) => {
     // check if file exist
     if (!fs.existsSync(filePath)) {
       console.log('Csv File not found:', filePath);
